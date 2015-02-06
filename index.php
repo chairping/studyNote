@@ -20,7 +20,35 @@ define('APP_DEBUG',True);
 // 定义应用目录
 define('APP_PATH','./Application/');
 
-// 引入ThinkPHP入口文件
-require './ThinkPHP/ThinkPHP.php';
+try{
+    // 引入ThinkPHP入口文件
+    require './ThinkPHP/ThinkPHP.php';
 
 // 亲^_^ 后面不需要任何代码了 就是如此简单
+}catch (\Think\Exception $e) {
+
+}
+
+
+class DataTest extends PHPUnit_Framework_TestCase
+{
+    /**
+     * dataProvider additionProvider
+     */
+    public function testAdd()
+    {
+        $a = A('Home/Index');
+        $a->index();
+        $this->assertEquals('sdf',  $a->index());
+//        $this->assertEquals($expected, $a + $b);
+    }
+//    public function additionProvider()
+//    {
+//        return array(
+//            array(0, 0, 0),
+//            array(0, 1, 1),
+//            array(1, 0, 1),
+//            array(1, 1, 3)
+//        );
+//    }
+}

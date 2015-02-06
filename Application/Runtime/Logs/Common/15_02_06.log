@@ -1,0 +1,111 @@
+[ 2015-02-06T00:02:59+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /opt/nginx/html/tp/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /opt/nginx/html/tp/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [2] Missing argument 1 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [2] Missing argument 2 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [2] Missing argument 3 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [8] Undefined variable: expected /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+NOTIC: [8] Undefined variable: b /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+NOTIC: [8] Undefined variable: a /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+
+[ 2015-02-06T00:03:28+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /opt/nginx/html/tp/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /opt/nginx/html/tp/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [2] Missing argument 1 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [2] Missing argument 2 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [2] Missing argument 3 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [8] Undefined variable: expected /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+NOTIC: [8] Undefined variable: b /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+NOTIC: [8] Undefined variable: a /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+
+[ 2015-02-06T00:03:30+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /opt/nginx/html/tp/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /opt/nginx/html/tp/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [2] Missing argument 1 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [2] Missing argument 2 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [2] Missing argument 3 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [8] Undefined variable: expected /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+NOTIC: [8] Undefined variable: b /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+NOTIC: [8] Undefined variable: a /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+
+[ 2015-02-06T00:27:14+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /opt/nginx/html/tp/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /opt/nginx/html/tp/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [2] Missing argument 1 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [2] Missing argument 2 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [2] Missing argument 3 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [8] Undefined variable: expected /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+NOTIC: [8] Undefined variable: b /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+NOTIC: [8] Undefined variable: a /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+
+[ 2015-02-06T00:28:16+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /opt/nginx/html/tp/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /opt/nginx/html/tp/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [2] Missing argument 1 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [2] Missing argument 2 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [2] Missing argument 3 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [8] Undefined variable: expected /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+NOTIC: [8] Undefined variable: b /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+NOTIC: [8] Undefined variable: a /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+
+[ 2015-02-06T00:28:43+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /opt/nginx/html/tp/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /opt/nginx/html/tp/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [2] Missing argument 1 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [2] Missing argument 2 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [2] Missing argument 3 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [8] Undefined variable: expected /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+NOTIC: [8] Undefined variable: b /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+NOTIC: [8] Undefined variable: a /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+
+[ 2015-02-06T00:29:08+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /opt/nginx/html/tp/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /opt/nginx/html/tp/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [2] Missing argument 1 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [2] Missing argument 2 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [2] Missing argument 3 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [8] Undefined variable: expected /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+NOTIC: [8] Undefined variable: b /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+NOTIC: [8] Undefined variable: a /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+
+[ 2015-02-06T00:32:12+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /opt/nginx/html/tp/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /opt/nginx/html/tp/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+NOTIC: [2] Missing argument 1 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [2] Missing argument 2 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [2] Missing argument 3 for DataTest::testAdd2() /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 38 行.
+NOTIC: [8] Undefined variable: expected /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+NOTIC: [8] Undefined variable: b /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+NOTIC: [8] Undefined variable: a /opt/nginx/html/tp/tests/Application/Demo/DataTest.php 第 40 行.
+
+[ 2015-02-06T00:37:54+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD /opt/nginx/html/tp/ThinkPHP/Library/Think/App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI /opt/nginx/html/tp/ThinkPHP/Library/Think/Dispatcher.class.php 第 137 行.
+

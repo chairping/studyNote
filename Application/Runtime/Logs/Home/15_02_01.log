@@ -761,3 +761,35 @@ INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
 SQL: SHOW COLUMNS FROM `x` [ RunTime:0.0009s ]
 SQL: SELECT * FROM `x`  [ RunTime:0.0002s ]
 
+[ 2015-02-01T23:48:16+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+NOTIC: [2] Illegal string offset 'db_type' xdebug://debug-eval 第 2 行.
+NOTIC: [8] Uninitialized string offset: 0 xdebug://debug-eval 第 2 行.
+NOTIC: [2] Illegal string offset 'db_user' xdebug://debug-eval 第 3 行.
+NOTIC: [8] Uninitialized string offset: 0 xdebug://debug-eval 第 3 行.
+NOTIC: [2] Illegal string offset 'db_pwd' xdebug://debug-eval 第 4 行.
+NOTIC: [8] Uninitialized string offset: 0 xdebug://debug-eval 第 4 行.
+NOTIC: [2] Illegal string offset 'db_host' xdebug://debug-eval 第 5 行.
+NOTIC: [8] Uninitialized string offset: 0 xdebug://debug-eval 第 5 行.
+NOTIC: [2] Illegal string offset 'db_port' xdebug://debug-eval 第 6 行.
+NOTIC: [8] Uninitialized string offset: 0 xdebug://debug-eval 第 6 行.
+NOTIC: [2] Illegal string offset 'db_name' xdebug://debug-eval 第 7 行.
+NOTIC: [8] Uninitialized string offset: 0 xdebug://debug-eval 第 7 行.
+NOTIC: [2] Illegal string offset 'db_type' xdebug://debug-eval 第 2 行.
+NOTIC: [8] Uninitialized string offset: 0 xdebug://debug-eval 第 2 行.
+NOTIC: [2] Illegal string offset 'db_user' xdebug://debug-eval 第 3 行.
+NOTIC: [8] Uninitialized string offset: 0 xdebug://debug-eval 第 3 行.
+NOTIC: [2] Illegal string offset 'db_pwd' xdebug://debug-eval 第 4 行.
+NOTIC: [8] Uninitialized string offset: 0 xdebug://debug-eval 第 4 行.
+NOTIC: [2] Illegal string offset 'db_host' xdebug://debug-eval 第 5 行.
+NOTIC: [8] Uninitialized string offset: 0 xdebug://debug-eval 第 5 行.
+NOTIC: [2] Illegal string offset 'db_port' xdebug://debug-eval 第 6 行.
+NOTIC: [8] Uninitialized string offset: 0 xdebug://debug-eval 第 6 行.
+NOTIC: [2] Illegal string offset 'db_name' xdebug://debug-eval 第 7 行.
+NOTIC: [8] Uninitialized string offset: 0 xdebug://debug-eval 第 7 行.
+

@@ -4,11 +4,16 @@ use Think\Controller;
 class IndexController extends Controller {
 
     public function _initialize() {
-        \Think\Hook::add('action_begin', 'Home\\Behaviors\\B\\testBehavior');
+//        \Think\Hook::add('action_begin', 'Home\\Behaviors\\B\\testBehavior');
     }
 
+    public function dummy(){
+        return 1;
+    }
     public function index(){
-        M('x')->select();
+        var_dump(dummy());
+//        return M('country')->select();
+//        M('x')->select();
 //        foreach(filter_list() as $id => $filter) {
 //            echo $filter . ' ' . filter_id($filter) . "</br >";
 //        }
@@ -108,4 +113,17 @@ class IndexController extends Controller {
         $this->a = array(5,'thinkphp');
         $this->display();
     }
+
+    public function typeClumn() {
+        // $string = 'sdfsd';
+        // echo ctype_alnum($string);
+        // var_dump(mb_strlen($string, '8bit'));
+        // var_dump(mb_strlen($string, 'utf-8'));
+        // var_dump(strlen($string));
+
+        // var_dump(mb_internal_encoding());
+        var_dump( substr( 'abc', 5, 2 ) ); // returns "false"
+        var_dump( mb_substr( 'abc', 5, 2 ) ); // returns ""
+    }
+    
 }
