@@ -120,3 +120,8 @@ echo substr_replace($var, 'bob', -7, -1) . "<br />\n";
 
 /* 从 $var 中删除 “MNRPQR”。*/
 echo substr_replace($var, '', 10, -1) . "<br />\n";
+
+
+//============================== preg_replace_callback ================================/
+
+
