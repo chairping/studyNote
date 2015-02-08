@@ -1,0 +1,56 @@
+[ 2015-02-07T23:39:41+08:00 ] 127.0.0.1 /index.php?m=Tph
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+NOTIC: [8] Undefined variable: moduleNameList /opt/nginx/html/tp/Application/Runtime/Cache/Tph/98ae914db6c9eb2bc54427b44be1b64e.php 第 85 行.
+NOTIC: [2] Invalid argument supplied for foreach() /opt/nginx/html/tp/Application/Runtime/Cache/Tph/98ae914db6c9eb2bc54427b44be1b64e.php 第 85 行.
+NOTIC: [8] Undefined variable: dbNameList /opt/nginx/html/tp/Application/Runtime/Cache/Tph/98ae914db6c9eb2bc54427b44be1b64e.php 第 97 行.
+NOTIC: [2] Invalid argument supplied for foreach() /opt/nginx/html/tp/Application/Runtime/Cache/Tph/98ae914db6c9eb2bc54427b44be1b64e.php 第 97 行.
+NOTIC: [8] Undefined variable: moduleNameList /opt/nginx/html/tp/Application/Runtime/Cache/Tph/98ae914db6c9eb2bc54427b44be1b64e.php 第 141 行.
+NOTIC: [2] Invalid argument supplied for foreach() /opt/nginx/html/tp/Application/Runtime/Cache/Tph/98ae914db6c9eb2bc54427b44be1b64e.php 第 141 行.
+NOTIC: [8] Undefined variable: moduleNameList /opt/nginx/html/tp/Application/Runtime/Cache/Tph/98ae914db6c9eb2bc54427b44be1b64e.php 第 185 行.
+NOTIC: [2] Invalid argument supplied for foreach() /opt/nginx/html/tp/Application/Runtime/Cache/Tph/98ae914db6c9eb2bc54427b44be1b64e.php 第 185 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000982s ]
+
+[ 2015-02-07T23:44:20+08:00 ] 127.0.0.1 /index.php?m=Tph
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000751s ]
+NOTIC: [8] Undefined variable: moduleNameList /opt/nginx/html/tp/Application/Runtime/Cache/Tph/98ae914db6c9eb2bc54427b44be1b64e.php 第 85 行.
+NOTIC: [2] Invalid argument supplied for foreach() /opt/nginx/html/tp/Application/Runtime/Cache/Tph/98ae914db6c9eb2bc54427b44be1b64e.php 第 85 行.
+NOTIC: [8] Undefined variable: dbNameList /opt/nginx/html/tp/Application/Runtime/Cache/Tph/98ae914db6c9eb2bc54427b44be1b64e.php 第 97 行.
+NOTIC: [2] Invalid argument supplied for foreach() /opt/nginx/html/tp/Application/Runtime/Cache/Tph/98ae914db6c9eb2bc54427b44be1b64e.php 第 97 行.
+NOTIC: [8] Undefined variable: moduleNameList /opt/nginx/html/tp/Application/Runtime/Cache/Tph/98ae914db6c9eb2bc54427b44be1b64e.php 第 141 行.
+NOTIC: [2] Invalid argument supplied for foreach() /opt/nginx/html/tp/Application/Runtime/Cache/Tph/98ae914db6c9eb2bc54427b44be1b64e.php 第 141 行.
+NOTIC: [8] Undefined variable: moduleNameList /opt/nginx/html/tp/Application/Runtime/Cache/Tph/98ae914db6c9eb2bc54427b44be1b64e.php 第 185 行.
+NOTIC: [2] Invalid argument supplied for foreach() /opt/nginx/html/tp/Application/Runtime/Cache/Tph/98ae914db6c9eb2bc54427b44be1b64e.php 第 185 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+

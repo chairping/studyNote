@@ -1,209 +1,158 @@
-<script type="text/javascript">
-    allPageUrl = '__CONTROLLER__/previewAllPage/';
-    allPageCodeUrl = '__CONTROLLER__/allPageCode/';
-    allCodeUrl = '__CONTROLLER__/allCode/';
-    addPageUrl = '__CONTROLLER__/addPage/';
-    addCodeUrl = '__CONTROLLER__/addCode/';
-    editPageUrl = '__CONTROLLER__/editPage/';
-    editCodeUrl = '__CONTROLLER__/editCode/';
-    deleteCodeUrl = '__CONTROLLER__/deleteCode/';
-</script>
-<div class="container">
-    <!-- modle -->
-    <div class="panel panel-info">
-        <div class="panel-heading">
-            <h3 class="panel-title">Model</h3>
-        </div>
-        <div class="panel-body">
 
-            <div class="row">
-                <div class="col-md-10">
-                    <form class="form-horizontal">
-                        <!-- 模块 -->
-                        <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">选择模块</label>
-                            <div class="col-lg-6">
-                                <select class="form-control" id="moduleName">
-                                    <?php foreach($moduleNameList as $moduleName): ?>
-                                        <option value="<?php echo $moduleName;?>"><?php echo $moduleName;?></option>
-                                    <?php endforeach ?>
-                                </select>
-                            </div>
-                        </div>
-                        <!-- 数据库 -->
-                        <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">选择数据库</label>
-                            <div class="col-lg-6">
-                                <select class="form-control" id="dbName">
-                                    <option value=""></option>
-                                    <?php foreach($dbNameList as $dbName): ?>
-                                    <option value="<?php echo $dbName;?>"><?php echo $dbName;?></option>
-                                    <?php endforeach ?>
-                                </select>
-                            </div>
-                        </div>
-                        <!-- 数据表 -->
-                        <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">数据表:</label>
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <div class="checkbox" id="tabel_list">
-
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="button" id="createFilesBtn" class="btn btn-primary">直接生成文件</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end modle -->
-
-    <!-- controller -->
-    <div class="panel panel-info">
-        <div class="panel-heading">
-            <h3 class="panel-title">Controller</h3>
-        </div>
-        <div class="panel-body">
-
-            <div class="row">
-                <div class="col-md-10">
-                    <form class="form-horizontal">
-                        <!-- 模块 -->
-                        <div class="form-group">
-                            <label for="cModuleName" class="col-sm-2 control-label">选择模块</label>
-                            <div class="col-lg-6">
-                                <select class="form-control" id="cModuleName">
-                                    <?php foreach($moduleNameList as $moduleName): ?>
-                                    <option value="<?php echo $moduleName;?>"><?php echo $moduleName;?></option>
-                                    <?php endforeach ?>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- 控制器 -->
-                        <div class="form-group">
-                            <label for="controller" class="col-sm-2 control-label">控制器</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="controller" placeholder="控制器名以，号隔开">
-                            </div>
-                        </div>
-
-                    </form>
-
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="button" id="cCreateFilesBtn" class="btn btn-primary">直接生成文件</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end controller -->
-
-    <!-- start service-->
-    <div class="panel panel-info">
-        <div class="panel-heading">
-            <h3 class="panel-title">Controller</h3>
-        </div>
-        <div class="panel-body">
-
-            <div class="row">
-                <div class="col-md-10">
-                    <form class="form-horizontal">
-                        <!-- 模块 -->
-                        <div class="form-group">
-                            <label for="cModuleName" class="col-sm-2 control-label">选择模块</label>
-                            <div class="col-lg-6">
-                                <select class="form-control" id="cModuleName">
-                                    <?php foreach($moduleNameList as $moduleName): ?>
-                                    <option value="<?php echo $moduleName;?>"><?php echo $moduleName;?></option>
-                                    <?php endforeach ?>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- 控制器 -->
-                        <div class="form-group">
-                            <label for="controller" class="col-sm-2 control-label">控制器</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="controller" placeholder="控制器名以，号隔开">
-                            </div>
-                        </div>
-
-                    </form>
-
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="button" id="cCreateFilesBtn" class="btn btn-primary">直接生成文件</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end service-->
-
-<!-- end container -->
-</div>
+<form id="hh">
+    <?php foreach($validation as $val): ?>
+        xx<input  validateJson='<?php echo json_encode($val);?>' />
+    <?php endforeach;?>
+</form>
 
 <script>
-    /*modle*/
     $(function(){
-        $('#createFilesBtn').click(function() {
-            moduleName = $('#moduleName option:selected').val();
-            checkedBox = $('#tabel_list input:checked');
-
-            selectTableName = [];
-            checkedBox.each(function(){
-                selectTableName.push($(this).val());
-            });
-
-            $.post("{:U('Index/createModelFiles')}", {"moduleName":moduleName,"tableName":selectTableName}, function(data){
-            });
-        });
-
-        /*获取表列表*/
-        $("#dbName").change(function(){
-            var data = {};
-            data.dbName = $(this).val();
-            $.post("{:U('Index/getTables')}", data, function(result){
-                var tables = '';
-
-                $.each(result, function(index, val){
-                    tables += ' <label><input type="checkbox" name="table" value="'+ val +'">&nbsp;'+ val +'</input></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
-                });
-
-                $("#tabel_list").html(tables);
-            }, 'json');
-        });
+        $("#hh").FormValidate(true);
     });
+    !function($){
+        $.fn.FormValidate = function(isCheck){
+            var _formObj = $(this); // 表单对象
 
-    /*controller*/
-    $(function(){
-        $('#cCreateFilesBtn').click(function() {
-            moduleName = $('#cModuleName option:selected').val();
-            checkedBox = $('#tabel_list input:checked');
+            var Form = {
+                'EXISTS_VALIDATE': 0,
+                'MUST_VALIDATE': 1,
+                'VALUE_VALIDATE': 2,
+                'data' : {},
+                'check' : true, // 表单是否验证通过
+                'init': function(option){
+                    if (option.check === false) {
+                        Form.check = false;
+                    }
+                    return $(this);
+                },
+                'input':function() {
+                    var input =  _formObj.find(':input[type!=button]');
+                    Form.validate(input);
+                },
+                'select':function() {
+                    var input =  _formObj.find(':input[type!=select]');
+                    Form.validate(input);
+                },
+                'checkbox':function() {
+                    var input =  _formObj.find(':input[type!=checkbox]');
+                    Form.validate(input);
+                },
+                'validate': function(obj){
+                    var name ='';
+                    $.each(obj, function(){
+                        var objValue = $(this).val();
+                        var validateArr = $.parseJSON($(this).attr('validateJson'));
+//                        alert(Array.isArray(obj));
+                        if (Array.isArray(validateArr)) {
+                            var isMultiArr = false;
+                            var len =validateArr.length;
+                            // 判断是否为多维数组
+                            for (i = 0; i < len; i ++) {
+                                if (obj[i] instanceof Array) {
+                                    isMultiArr = true;
+                                }
+                                break;
+                            }
 
-            selectTableName = [];
-            checkedBox.each(function(){
-                selectTableName.push($(this).val());
-            });
+                            if (isMultiArr) {
+                                var multirArr = validateArr;
+                                multirArr.forEach(function(arr){
+                                    Form.processer(arr, objValue);
+                                });
+                            } else {
+                                Form.processer(validateArr, objValue);
+                            }
+                        }
+                    });
+                },
+                'processer' : function(arr, value) {
+                    var style = '';
+//                  判断是否存在3索引 tp默认为 EXISTS_VALIDATE 即 存在字段就验证
+                    if (arr.indexOf(3) == -1 || arr[3] === Form.EXISTS_VALIDATE) {
+                        // 该情况前端js不需要做处理
+                        return '';
+                    }
+                    // 不为空验证的时候 值为空 则不做验证
+                    if (arr[3] === Form.VALUE_VALIDATE && $.trim(value) == '') {
+                        return '';
+                    }
 
-            $.post("{:U('Index/createModelFiles')}", {"moduleName":moduleName,"tableName":selectTableName}, function(data){
-            });
-        });
-    });
+                    if (arr.indexOf(4) !== -1) {
+                        if (arr[2] == 'require') {
+                            style = arr[2];
+                        } else {
+                            style = arr[4];
+                        }
+                    }
 
+                    switch (style) {
+                        case 'function':
+                        case 'callback':
+                            break;
+                        case 'confirm':
+                            var name1 = _formObj.find(":input[name='"+ arr[0] + "']").val();
+                            var name2 = _formObj.find(":input[name='"+ arr[1] + "']").val();
+                            if ($.trim(name1) != $.trim(name2)) {
+                                console.log(arr[2]);
+                                Form.check = false;
+                            }
+                            break;
+                        case 'require':
+                            if ($.trim(value) == '') {
+                                console.log(arr[2]);
+                                Form.check = false;
+                            }
+                            break;
+                        case 'equal':
+                            break;
+                        case 'notequal':
+                            break;
+                        case 'in':
+                            if (arr[2] instanceof Array) {
+                                var flag = false;
+                                if(arr[2].e(function(arrOfValue){ return arrOfValue == value; }) === true){
+                                    flag = true;
+                                }
+                                if (flag == false) {
+                                    console.log(arr[2]);
+                                    Form.check = false;
+                                }
+                            }
+                            break;
+                        case 'notin':
+                            break;
+                        case 'length':
+                            break;
+                        case 'between':
+                            break;
+                        case 'notbetween':
+                            break;
+                        case 'expire':
+                            break;
+                        case 'ip_allow':
+                            break;
+                        case 'ip_deny':
+                            break;
+                        case 'unique':
+                            break;
+                        case 'regex':
+                        default :
+                    }
+                },
+                'work': function(){
+                    Form.input();
+                    Form.select();
+                    Form.checkbox();
+                    Form.submit();
+                },
+                'submit':function(){
+
+                }
+            }
+            var option = {};
+            option.check = isCheck;
+            Form.init(option);
+            Form.work();
+        }
+    }(window.jQuery);
 </script>
-<!-- Mainbar ends -->
-<div class="clearfix"></div>
