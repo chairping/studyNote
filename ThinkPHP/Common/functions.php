@@ -45,6 +45,7 @@ function C($name=null, $value=null,$default=null) {
     }
     // 批量设置
     if (is_array($name)){
+        // array_change_key_case($namme, CASE_LOWER)  //
         $_config = array_merge($_config, array_change_key_case($name,CASE_UPPER));
         return null;
     }

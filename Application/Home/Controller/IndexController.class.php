@@ -11,7 +11,12 @@ class IndexController extends Controller {
         return 1;
     }
     public function index(){
-        var_dump(dummy());
+
+
+
+//        number_format
+
+//        var_dump(dummy());
 //        return M('country')->select();
 //        M('x')->select();
 //        foreach(filter_list() as $id => $filter) {
