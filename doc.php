@@ -104,3 +104,29 @@ git checkout命令加上-b参数表示创建并切换，相当于以下两条命
 $ git branch dev
 $ git checkout dev
 Switched to branch 'dev'
+
+
+
+推送分支，就是把该分支上的所有本地提交推送到远程库。推送时，要指定本地分支，这样，Git就会把该分支推送到远程库对应的远程分支上：
+$ git push origin master
+如果要推送其他分支，比如dev，就改成：
+$ git push origin dev
+
+现在，你的小伙伴要在dev分支上开发，就必须创建远程origin的dev分支到本地，于是他用这个命令创建本地dev分支：
+$ git checkout -b dev origin/dev
+
+it branch --set-upstream-to=origin/<branch> dev
+
+cp@cp:/var/www/html/Git/studyNote$ git branch --set-upstream-to=origin/dev dev
+分支 dev 设置为跟踪来自 origin 的远程分支 dev。
+
+查看远程库信息，使用git remote -v；
+本地新建的分支如果不推送到远程，对其他人就是不可见的；
+从本地推送分支，使用git push origin branch-name，如果推送失败，先用git pull抓取远程的新提交；
+在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name，本地和远程分支的名称最好一致；
+建立本地分支和远程分支的关联，使用git branch --set-upstream branch-name origin/branch-name；
+从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。
+
+
+
+
