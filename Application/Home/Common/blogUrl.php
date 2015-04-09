@@ -18,3 +18,5 @@ http://blog.wyrihaximus.net/2015/03/reactphp-sockets/
 https://medium.com/@marcioalmada/why-strict-arg-count-on-function-calls-will-make-php-better-saner-easier-cc360bf7c7da
 
 https://www.phptoday.org/18
+
+http://colobu.com/2015/04/08/software-architecture-patterns/
