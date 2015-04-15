@@ -73,3 +73,5 @@ Implementing Laravel 免费了
 https://phphub.org/topics/499
 
 http://fideloper.com/ 
+
+http://www.cnblogs.com/figure9/p/sublime-text-complete-guide.html
