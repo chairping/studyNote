@@ -71,3 +71,5 @@ http://lifesign.github.io/laravel_slide/#/
 
 Implementing Laravel 免费了
 https://phphub.org/topics/499
+
+http://fideloper.com/ 
