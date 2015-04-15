@@ -72,6 +72,7 @@ http://lifesign.github.io/laravel_slide/#/
 Implementing Laravel 免费了
 https://phphub.org/topics/499
 
+
 PHP 开发者实践
 https://www.gitbook.com/book/ryancao/php-developer-prepares/details
 
@@ -81,3 +82,6 @@ http://www.it-ebooks.info/book/4781/
 
 https://github.com/lifesign
 https://github.com/laravel/docs
+http://fideloper.com/ 
+
+http://www.cnblogs.com/figure9/p/sublime-text-complete-guide.html
