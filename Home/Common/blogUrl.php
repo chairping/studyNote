@@ -75,3 +75,8 @@ https://phphub.org/topics/499
 http://fideloper.com/ 
 
 http://www.cnblogs.com/figure9/p/sublime-text-complete-guide.html
+
+你会做Web上的用户登录功能吗？
+http://blogread.cn/it/article/4256?f=wb
+php 工匠
+http://laravelbase.com/sites#
