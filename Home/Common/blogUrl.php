@@ -90,3 +90,18 @@ http://www.cnblogs.com/figure9/p/sublime-text-complete-guide.html
 http://blogread.cn/it/article/4256?f=wb
 php 工匠
 http://laravelbase.com/sites#
+
+phptrace 介绍及使用指南
+https://github.com/Qihoo360/phptrace/wiki
+
+RAP
+http://thx.github.io/RAP/index_zh.html
+
+Awesome PHP
+https://github.com/ziadoz/awesome-php
+
+10个超级有用、必须收藏的PHP代码样例
+http://www.techug.com/10-super-useful-php-code-snippets
+
+Restler 3 - 很棒的api设计框架
+http://www.luracast.com/products/restler
