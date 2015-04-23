@@ -105,3 +105,6 @@ http://www.techug.com/10-super-useful-php-code-snippets
 
 Restler 3 - 很棒的api设计框架
 http://www.luracast.com/products/restler
+
+全面解析PHP的糟糕设计
+http://blog.jobbole.com/17661/
