@@ -111,3 +111,5 @@ https://github.com/bolasblack/http-api-guide
 
 基于Slim+Eloquent的RESTful API框架
 http://git.oschina.net/overtrue/rester
+全面解析PHP的糟糕设计
+http://blog.jobbole.com/17661/
