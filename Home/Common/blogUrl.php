@@ -105,3 +105,9 @@ http://www.techug.com/10-super-useful-php-code-snippets
 
 Restler 3 - 很棒的api设计框架
 http://www.luracast.com/products/restler
+
+HTTP 接口设计指北
+https://github.com/bolasblack/http-api-guide
+
+基于Slim+Eloquent的RESTful API框架
+http://git.oschina.net/overtrue/rester

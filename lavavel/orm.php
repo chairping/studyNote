@@ -1,11 +1,34 @@
 <?php
+class Menu extends \Eloquent
+{
+    const CREATED_AT = 'create_time';
+    const UPDATED_AT = 'update_time';
+    protected $table      = 'menu';
+    protected $fillable = [
+        'id', 
+	'title',
+ 	'create_time',
+	'update_time', 
+	'url', 
+	'hide', 
+	'tip', 
+	'group', 
+	'is_dev', 
+	'icon'
+    ];
 
-//保存数据库连接信息
-$this->container['config']['database.connections'];
+}
 
-//Eloquent(Model)启动  Eloquent类负责启动
-Manager::bootEloquent();
-    Eloquent::setConnectionResolver($this->manager); //保存manage
+        $menu = new Menu();
+//        $menu->id = 3;
+        $menu->title = 'a';
+//        $menu->hah = 'b';
+        $menu->save();
 
 
-Manager::getEventDispatcher(); //Get the current event dispatcher instance.
+   	$a =  Menu::create(array('hh' => 1, 'title' => 'hahah'));
+        var_dump($a);
+
+
+// 
+
