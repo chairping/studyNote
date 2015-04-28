@@ -113,3 +113,6 @@ https://github.com/bolasblack/http-api-guide
 http://git.oschina.net/overtrue/rester
 全面解析PHP的糟糕设计
 http://blog.jobbole.com/17661/
+
+理解OAuth 2.0
+http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
