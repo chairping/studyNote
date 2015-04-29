@@ -116,3 +116,6 @@ http://blog.jobbole.com/17661/
 
 理解OAuth 2.0
 http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+
+// swagger A Powerful Interface to your API
+https://packagist.org/packages/zircote/swagger-php
