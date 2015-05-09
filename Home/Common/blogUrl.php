@@ -114,8 +114,16 @@ http://git.oschina.net/overtrue/rester
 全面解析PHP的糟糕设计
 http://blog.jobbole.com/17661/
 
+<<<<<<< HEAD
 OAuth 2.0安全案例回顾
 http://drops.wooyun.org/papers/598
 
 使用OAuth2.0访问豆瓣API
 http://developers.douban.com/wiki/?title=oauth2
+=======
+理解OAuth 2.0
+http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+
+// swagger A Powerful Interface to your API
+https://packagist.org/packages/zircote/swagger-php
+>>>>>>> 631808a512a564b66d31ec9784b46fcd67da83c3
