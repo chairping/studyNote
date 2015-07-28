@@ -1,6 +1,5 @@
 <?php
 
-
 class App {
     protected $routes = array();
     protected $responseStatus = '200 OK';
