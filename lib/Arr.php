@@ -77,7 +77,7 @@ class Arr
 
         return $array;
     }
-    // ¹¦ÄÜÉÏÓëarray_map ÏàËÆ µ«ÊÇ¿ÉÒÔ¿ØÖÆkey
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½array_map ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½key
     public static function build($array, Closure $callback)
     {
         $results = array();
@@ -114,7 +114,7 @@ class Arr
         return $results;
     }
 
-    // ·µ»Ø²î¼¯
+    // ï¿½ï¿½ï¿½Ø²î¼¯
     public static function except($array, $keys)
     {
         return array_diff_key($array, array_flip((array) $keys));
@@ -127,7 +127,7 @@ class Arr
 //];
 //$a = Arr::fetch($array, 'a.xxx');
 //array (size=1)
-//0 => int 3   ·µ»ØÖ¸¶¨µÄÖµ
+//0 => int 3   ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Öµ
     public static function fetch($array, $key)
     {
         foreach (explode('.', $key) as $segment)
@@ -147,7 +147,7 @@ class Arr
 
         return array_values($results);
     }
-    //  ·µ»Ø·ûºÏÌõ¼þµÄµÚÒ»¸öÖµ
+    //  ï¿½ï¿½ï¿½Ø·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Ò»ï¿½ï¿½Öµ
     public static function first($array, $callback, $default = null)
     {
         foreach ($array as $key => $value)
@@ -158,13 +158,13 @@ class Arr
         return value($default);
     }
 
-    // ·µ»Ø·ûºÏÌõ¼þµÄ×îºóÒ»¸öÖµ
+    // ï¿½ï¿½ï¿½Ø·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Öµ
     public static function last($array, $callback, $default = null)
     {
         return static::first(array_reverse($array), $callback, $default);
     }
 
-    // °Ñ¶à¼¶Êý×é»¯³Éµ¥Ò»Êý×é
+    // ï¿½Ñ¶à¼¶ï¿½ï¿½ï¿½é»¯ï¿½Éµï¿½Ò»ï¿½ï¿½ï¿½ï¿½
     public static function flatten($array)
     {
         $return = array();
@@ -173,7 +173,7 @@ class Arr
 
         return $return;
     }
-    // É¾³ýÖ¸¶¨²ã¼¶µÄÖµ
+    // É¾ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ã¼¶ï¿½ï¿½Öµ
     public static function forget(&$array, $keys)
     {
         $original =& $array;
@@ -198,7 +198,7 @@ class Arr
             $array =& $original;
         }
     }
-    // ·µ»Ø¼üÃûµÄ½»¼¯
+    // ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½Ä½ï¿½ï¿½ï¿½
     public static function only($array, $keys)
     {
         return array_intersect_key($array, array_flip((array) $keys));
