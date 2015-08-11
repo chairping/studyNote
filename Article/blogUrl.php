@@ -40,6 +40,9 @@ http://thx.github.io/RAP/index_zh.html
 全面解析PHP的糟糕设计
 http://blog.jobbole.com/17661/
 
-
+################################### CSRF ###################################
 CSRF
 http://www.2cto.com/Article/201210/161805.html
+
+前后端分离模式下的安全解决方案
+http://blog.jobbole.com/71661/
