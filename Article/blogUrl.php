@@ -46,3 +46,6 @@ http://www.2cto.com/Article/201210/161805.html
 
 前后端分离模式下的安全解决方案
 http://blog.jobbole.com/71661/
+
+高质量的博客
+http://code.tutsplus.com/categories/php?page=4
