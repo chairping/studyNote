@@ -14,7 +14,8 @@ https://www.gitbook.com/book/ryancao/php-developer-prepares/details
 Awesome PHP
 https://github.com/ziadoz/awesome-php
 
-
+博客
+http://paul-m-jones.com/archives/category/patterns
 
 
 
@@ -113,3 +114,7 @@ https://github.com/yeaha/Lysine2
 RESTful API 设计最佳实践
 http://www.oschina.net/translate/best-practices-for-a-pragmatic-restful-api
 http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
+
+
+PHP开发：从程序化到面向对象(1)
+http://developer.51cto.com/art/201307/402210.htm
