@@ -1,58 +1,6 @@
 <?php
 
-// Find the value of a Key
-function seekKey($haystack, $needle){
-    foreach($haystack as $key => $value){
-        if($key == $needle){
-            $output = $value;
-        }elseif(is_array($value)){
-            $output = seekKey($value, $needle);
-        }
-    }
-    return $output;
-}
-
-// Find the Key that matches the Value
-function seekValue($haystack, $needle){
-    foreach($haystack as $key => $value){
-        if($key == $needle){
-            $output = $value;
-        }elseif(is_array($value)){
-            $output = seekValue($value, $needle);
-        }
-    }
-    return $output;
-}
-
-function seekAndDestroy($haystack, $needle){
-    foreach($haystack as $key => $value){
-        if($key == $needle){
-            unset($key);
-        }elseif(is_array($value)){
-            $output[$key] = seekAndDestroy($value, $needle);
-        }else{
-            $output[$key] = $value;
-        }
-    }
-    return $output;
-}
-
-
-function seekAndRename($haystack, $needle, $new){
-    foreach($haystack as $key => $value){
-        if($key == $needle){
-            $output[$new] = $value;
-        }elseif(is_array($value)){
-            $output[$key] = seekAndRename($value, $needle, $new);
-        }else{
-            $output[$key] = $value;
-        }
-    }
-    return $output;
-}
-
 <?php
-
 /**
  * Recursively converts a SimpleXML object (and children) to an array.
  *
@@ -67,10 +15,8 @@ function xmlToArr($xml)
         return "";
     }
     $xml = (array) $xml;
-    foreach ($xml as &$val)
-    {
-        if (get_class($val) == "SimpleXMLElement")
-        {
+    foreach ($xml as &$val) {
+        if (get_class($val) == "SimpleXMLElement") {
             $val = xmlToArr($val);
         }
     }
@@ -87,7 +33,6 @@ function refresh($seconds=10)
     header("Refresh:".$seconds.";");
 }
 
-
 /**
  * Returns array of all URL in input string
  * @return array
@@ -100,22 +45,6 @@ function extractURL($string)
     $matches = $matches[1];
     return $matches;
 }
-
-class Trigger {
-    public static $instance;
-    public static function current() {
-        if (self::$instance == null) {
-            self::$instance = new Trigger();
-        }
-        return self::$instance;
-    }
-
-    public function filter($regexp, $type){
-
-    }
-}
-
-
 
 /**
  * Returns the IP address .
@@ -215,8 +144,6 @@ function cardType($number)
     }
 }
 
-
-
 /**
  * Get the URL of current page open in browser
  * @return string
@@ -227,52 +154,40 @@ function getCurrentURL()
     return $url;
 }
 
-
 function trimText($inputText, $start, $length)
 {
     $temp = $inputText;
     $res = array();
-    while(strpos($temp,'>'))
-    {
+    while(strpos($temp,'>')) {
         $ts = strpos($temp,'<');
         $te = strpos($temp,'>');
-        if($ts >0)
-        {
+        if($ts >0) {
             $res[]= substr($temp,0, $ts);
         }
         $res[]= substr($temp, $ts, $te - $ts +1);
         $temp = substr($temp, $te +1, strlen($temp)- $te);
     }
-    if($temp !='')
-    {
+    if($temp !='') {
         $res[]= $temp;
     }
     $pointer =0;
     $end = $start + $length -1;
-    foreach($res as &$part)
-    {
-        if(substr($part,0,1)!='<')
-        {
+    foreach($res as &$part) {
+        if(substr($part,0,1)!='<') {
             $l = strlen($part);
             $p1 = $pointer;
             $p2 = $pointer + $l -1;
             $partx ="";
-            if($start <= $p1 && $end >= $p2)
-            {
+            if($start <= $p1 && $end >= $p2) {
                 $partx ="";
-            }
-            else
-            {
-                if($start > $p1 && $start <= $p2)
-                {
+            } else {
+                if($start > $p1 && $start <= $p2) {
                     $partx .= substr($part,0, $start-$pointer);
                 }
-                if($end >= $p1 && $end < $p2)
-                {
+                if($end >= $p1 && $end < $p2) {
                     $partx .= substr($part, $end-$pointer+1, $l-$end+$pointer);
                 }
-                if($partx =="")
-                {
+                if($partx =="") {
                     $partx = $part;
                 }
             }
@@ -281,4 +196,43 @@ function trimText($inputText, $start, $length)
         }
     }
     return join('', $res);
+}
+
+function formatSize($size){
+    $sizes = array(" B", " K", " M", " GB");
+
+    if ($size == 0) {
+        return 'n/a';
+    } else {
+        return (round($size/pow(1024, ($i = floor(log($size, 1024)))), 2) . $sizes[$i]);
+    }
+}
+
+
+/**
+ * @desc  过滤字符串
+ * @param string $str      要过滤的字符串
+ * @param string $tag      符合过滤条件的标记
+ * @return string          返回过滤后的字符串
+ * @eample
+ *      $string = <<<STR   /**
+ *          *  @desc  过滤字符串
+ *          *   @param string $str      要过滤的字符串
+ *          *\/
+ *      STR;
+ *      $this->getDocComment($string, '@desc');  // output: 过滤字符串
+ */
+function getDocComment($str, $tag = '') {
+    if (empty($tag)) {
+        return $str;
+    }
+
+    $matches = array();
+    preg_match("/".$tag." (.*)(\\r\\n|\\r|\\n)/U", $str, $matches);
+
+    if (isset($matches[1])) {
+        return trim($matches[1]);
+    }
+
+    return '';
 }
