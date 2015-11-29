@@ -2,7 +2,6 @@
 
 trait MetaTrait
 {
-   
     private $methods = array();
 
     public function addMethod($methodName, $methodCallable)
@@ -21,11 +20,10 @@ trait MetaTrait
 
         throw RunTimeException('There is no method with the given name to call');
     }
-
 }
 
 
-equire 'MetaTrait.php';
+require 'MetaTrait.php';
 
 class HackThursday {
     use MetaTrait;

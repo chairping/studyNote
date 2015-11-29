@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: root
- * Date: 15-2-8
- * Time: 下午6:55
- */
-
 class Article implements ArrayAccess, IteratorAggregate {
     public $title;
     public $author;
@@ -79,7 +72,6 @@ echo '</div>';
 // Get the size of the iterator (see how many properties are left)
 echo "Object has ".sizeof($A->getIterator())." elements";
 
-
 /*** a simple array ***/
 $array = array('koala', 'kangaroo', 'wombat', 'wallaby', 'emu', 'kiwi', 'kookaburra', 'platypus');
 
@@ -88,22 +80,18 @@ $arrayObj = new ArrayObject($array);
 
 /*** iterate over the array ***/
 for($iterator = $arrayObj->getIterator();
-    /*** check if valid ***/
-    $iterator->valid();
-    /*** move to the next array member ***/
-    $iterator->next())
+    /*** check if valid ***/$iterator->valid();
+    /*** move to the next array member ***/$iterator->next())
 {
     /*** output the key and current array value ***/
     echo $iterator->key() . ' => ' . $iterator->current() . '<br />';
 }
 
-
 $arrayObj->append('dingo');
 $arrayObj->natcasesort();
 echo $arrayObj->count();
 $arrayObj->offsetUnset(5);
-if ($arrayObj->offsetExists(3))
-{
+if ($arrayObj->offsetExists(3)) {
     echo 'Offset Exists<br />';
 }
 $arrayObj->offsetSet(5, "galah");
