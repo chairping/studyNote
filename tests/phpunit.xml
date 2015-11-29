@@ -1,8 +1,0 @@
-<phpunit bootstrap="./bootstrap.php">
-    <testsuites>
-        <testsuite name="sss">
-
-            <file>/opt/nginx/html/tp/tests/Application/Demo/Stack2Test.php</file>
-        </testsuite>
-    </testsuites>
-</phpunit>-
