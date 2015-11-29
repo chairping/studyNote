@@ -5,15 +5,12 @@ class App {
     protected $reponseContentType = 'text/html';
     protected $responseBody = 'Hello world';
 
-    public function addRoute($reoutePath, $routeCallback)
-    {
+    public function addRoute($reoutePath, $routeCallback) {
         $this->routes[$reoutePath] = $routeCallback->bindTo($this, __CLASS__);
     }
 
-    public function dispatch($currentPath)
-    {
-        foreach ($this->routes as $routhPath => $callback)
-        {
+    public function dispatch($currentPath) {
+        foreach ($this->routes as $routhPath => $callback) {
             if ($routhPath === $currentPath) {
                 $callback();
             }

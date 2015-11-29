@@ -1,5 +1,4 @@
 <?php
-
 trait MetaTrait
 {
     private $methods = array();
@@ -22,19 +21,13 @@ trait MetaTrait
     }
 }
 
-
-require 'MetaTrait.php';
-
 class HackThursday {
     use MetaTrait;
-
     private $dayOfWeek = 'Thursday';
-
 }
 
 $test = new HackThursday();
 $test->addMethod('when', function () {
     return $this->dayOfWeek;
 });
-
 echo $test->when();

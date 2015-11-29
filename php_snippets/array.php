@@ -282,7 +282,3 @@ function trimText($inputText, $start, $length)
     }
     return join('', $res);
 }
-
-
-
-
