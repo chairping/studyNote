@@ -6,7 +6,7 @@ git rev-parse --show-toplevel   显示工作去根目录
 git rev-parse --show-prefix  相对于工作区根目录的相对目录
 
 git config 命令用于读取和更改INI配置文件的内容
-git config a.b 
+git config a.b g
 git config a.b something
 理解Git暂存区
 -------------
