@@ -6,7 +6,7 @@ class Chain {
 
     public function __construct() {
 
-        $this->middlewares = [$this];
+        $this->middlewares = [$this]; // 自己本身就是中间件
         $this->addMiddleware(new MiddlewareA);
     }
 
@@ -36,8 +36,7 @@ abstract class Middleware
     public function __construct() {
     }
 
-    public function setNextMiddleware($nextMiddleware)
-    {
+    public function setNextMiddleware($nextMiddleware) {
         $this->next = $nextMiddleware;
     }
 

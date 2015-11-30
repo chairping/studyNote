@@ -11,6 +11,9 @@
 
 [另一个博客](http://paul-m-jones.com/archives/category/patterns)
 
+[另一个博客2](http://blog.wyrihaximus.net/)
+
+
 
 文章
 ------
@@ -45,6 +48,8 @@
 
 [软件架构模式](http://colobu.com/2015/04/08/software-architecture-patterns/)
 
+[reactphp-sockets](http://blog.wyrihaximus.net/2015/03/reactphp-sockets/)
+
 其他
 -------
 [PHP必看视频](https://github.com/phptodayorg/php-must-watch)
@@ -61,8 +66,3 @@
 
 [CSRF](http://www.2cto.com/Article/201210/161805.html)
 [前后端分离模式下的安全解决方案](http://blog.jobbole.com/71661/)
-
-
-
-
-

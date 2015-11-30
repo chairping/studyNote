@@ -1,4 +1,6 @@
 <?php
+// Closure::bindTo 复制当前闭包对象，绑定指定的$this对象和类作用域。
+// 例子1
 class App {
     protected $routes = array();
     protected $responseStatus = '200 OK';
@@ -30,3 +32,24 @@ $app->addRoute('/users/josh', function(){
 });
 
 $app->dispatch('/users/josh');
+
+
+// 例子2
+class A {
+    public function __construct($val) {
+        $this->val = $val;
+    }
+
+    public function getClosure() {
+        return function() { return $this->val;};
+    }
+}
+
+$ob1 = new A(1);
+$ob2 = new A(2);
+
+$cl = $ob1->getClosure();
+echo $cl(); //  此时 这个匿名函数 默认banding $ob1; 所以输出1
+
+$cl = $cl->bindTo($ob2);  // 该匿名类重新绑定ob2  所以$this->val = 2;
+echo $cl();
