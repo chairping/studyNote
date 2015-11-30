@@ -41,35 +41,23 @@
 
 [PHP开发：从程序化到面向对象(1)](http://developer.51cto.com/art/201307/402210.htm)
 
+[Laravel-Excel](http://laraveldaily.com/laravel-excel-export-eloquent-models-results-easily/)
+
+[软件架构模式](http://colobu.com/2015/04/08/software-architecture-patterns/)
+
 其他
 -------
 [PHP必看视频](https://github.com/phptodayorg/php-must-watch)
 
-
 [IT eBooks](http://www.it-ebooks.info/book/4781/)
 [免费的编程中文书籍索引](https://github.com/justjavac/free-programming-books-zh_CN#php)
+[GIT BOOK](http://git-scm.com/book/zh/v1  "Pro Git book")
 
 [开源的论坛项目](https://github.com/flarum/flarum "Beautiful open-source forum software built for the modern web.http://flarum.org")
 
 [Pimple](https://github.com/silexphp/Pimple "A small PHP 5.3 dependency injection container http://pimple.sensiolabs.org")
 
-
-https://medium.com/@marcioalmada/why-strict-arg-count-on-function-calls-will-make-php-better-saner-easier-cc360bf7c7da
-
-https://www.phptoday.org/18
-
-http://colobu.com/2015/04/08/software-architecture-patterns/
-
-
-http://yansu.org/2014/12/06/ioc-and-facade-in-laravel.html
-
-http://www.cnblogs.com/figure9/p/sublime-text-complete-guide.html
-
-
-
-RAP
-http://thx.github.io/RAP/index_zh.html
-
+[sublime 指导](http://www.cnblogs.com/figure9/p/sublime-text-complete-guide.html)
 
 [CSRF](http://www.2cto.com/Article/201210/161805.html)
 [前后端分离模式下的安全解决方案](http://blog.jobbole.com/71661/)
