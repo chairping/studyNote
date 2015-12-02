@@ -50,6 +50,9 @@
 
 [reactphp-sockets](http://blog.wyrihaximus.net/2015/03/reactphp-sockets/)
 
+[php中的会话机制（1）](http://segmentfault.com/a/1190000000467467)
+[php中的会话机制（2）](http://segmentfault.com/a/1190000000468220)
+
 其他
 -------
 [PHP必看视频](https://github.com/phptodayorg/php-must-watch)
