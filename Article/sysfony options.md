@@ -1,4 +1,3 @@
-<?php
 The problem
 
 I am pretty sure this code sounds familiar to you:
